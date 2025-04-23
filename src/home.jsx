@@ -1,5 +1,6 @@
 import "./home.scss";
 import logo from "./assets/logo1.png";
+import { RiTwitterXFill } from "react-icons/ri";
 
 export const App = () => {
   return (
@@ -81,7 +82,6 @@ export const App = () => {
           <button className="btn">START NOW</button>
         </div>
       </section>
-
       <section className="features">
         <h2>KEY IDEAS</h2>
         <ul>
@@ -90,7 +90,6 @@ export const App = () => {
           <li>3. No waste, full compute usage.</li>
         </ul>
       </section>
-
       <section className="how">
         <h2>HOW IT WORKS</h2>
         <p>
@@ -106,7 +105,6 @@ export const App = () => {
           directly to you.
         </p>
       </section>
-
       <section className="why">
         <h2>WHY</h2>
         <p>
@@ -124,7 +122,9 @@ export const App = () => {
           and expand what’s possible for humanity.
         </p>
       </section>
-
+      <button className="contact-btn">
+        Contact Us <RiTwitterXFill />
+      </button>
       <footer className="footer">
         <p>© 2024 — CONTACT — DOCS</p>
       </footer>
