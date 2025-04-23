@@ -1,5 +1,5 @@
 import "./home.scss";
-import logo from "./assets/logo1.png";
+import logo from "./assets/logo2.png";
 import { RiTwitterXFill } from "react-icons/ri";
 
 export const App = () => {
@@ -7,7 +7,6 @@ export const App = () => {
     <div className="page">
       <figure className="logo">
         <img src={logo} alt="Logo" />
-        <h1>Bitlow.AI</h1>
       </figure>
       <section className="intro">
         <h1>WHAT IS THIS?</h1>
@@ -35,7 +34,7 @@ export const App = () => {
           inevitable.
         </p>
         <b>
-          You can reach us at <u>support@yourdomain.com</u>. If your team is
+          You can reach us at <u>support@miracle-llm.com</u>. If your team is
           spending $10K/month on inference, there’s a reason you're reading
           this.
         </b>
@@ -122,7 +121,10 @@ export const App = () => {
           and expand what’s possible for humanity.
         </p>
       </section>
-      <button className="contact-btn">
+      <button
+        className="contact-btn"
+        onClick={() => window.open("https://x.com/LlmMiracle ", "_blank")}
+      >
         Contact Us <RiTwitterXFill />
       </button>
       <footer className="footer">
