@@ -1,0 +1,156 @@
+$page-bg: #1c1c1c;
+$text-light: #d0d0d0;
+$font-mono: "IBM Plex Mono", monospace;
+
+.page {
+  color: $text-light;
+  font-family: $font-mono;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    filter: contrast(0.8) brightness(1.1);
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: $text-light;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1),
+      0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 15px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(90deg, #00c3ff, #00ff55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.1);
+    
+  }
+}
+
+.intro {
+  > p {
+    margin-bottom: 1.5rem;
+  }
+
+  .quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid #666;
+    background: #292929e6;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 15px rgba(255, 245, 252, 0.2);
+    border: 1px solid rgba(202, 202, 202, 0.103);
+    border-left: 4px solid #666;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed #444;
+}
+
+p,
+li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem 0 2rem;
+  background: #292929e6;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1),
+    0 0 15px rgba(255, 245, 252, 0.2);
+  border: 1px solid rgba(202, 202, 202, 0.103);
+
+  thead {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #666;
+      z-index: 99;
+      border-radius: 10px;
+    }
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+    border: 1px solid #444;
+    text-align: left;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    background: none;
+    border: 1px solid #666;
+    color: $text-light;
+    cursor: pointer;
+    font-family: $font-mono;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .btn:hover {
+    border-color: #aaa;
+  }
+}
+
+.features,
+.how,
+.why {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.75rem;
+  padding: 1rem;
+  color: #888;
+  background: #292929e6;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1),
+    0 0 15px rgba(255, 245, 252, 0.2);
+  border: 1px solid rgba(202, 202, 202, 0.103);
+  border-bottom: 1px solid #666;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
